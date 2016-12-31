@@ -20,12 +20,31 @@
   background-color: white;
 }
 
+.clear {
+  background-color: orange;
+  text-align: center;
+  color: white;
+  border-radius: 5px;
+  float: left;
+  width: 22%;
+  height: 30px;
+  line-height: 30px;
+}
+
+.clear:hover {
+  background-color: #ee7600;
+}
+
 .screen {
   height: 30px;
   background-color: white;
   border: 1px solid;
   border-color: #D3D3D3;
   border-radius: 5px;
+  width: 70%;
+  float: right;
+  padding: 0 10px;
+  line-height: 30px;
 }
 
 .numbers {
@@ -36,6 +55,8 @@
   padding-left: 1px;
 }
 
+.integer,
+.operator,
 .calculate {
   float: left;
   width: 22%;
@@ -46,8 +67,10 @@
   border-radius: 5px;
   margin: 1px;
   margin-top: 3px;
+  color: white;
 }
 
-.calculate:hover {
-  color: teal;
+.integer:hover,
+.operator:hover {
+  background-color: teal;
 }
