@@ -19,15 +19,28 @@ $(document).ready(function() {
   });
 
   $('.calculate').on('click', function () {
-    eval(entered);
-    $('.screen').text(eval(entered));
-
+    console.log(entered);
+    if (entered.indexOf('/0') !== -1) {
+      $('.screen').text('Error');
+    } else {
+      eval(entered);
+      $('.screen').text(eval(entered));
+    };
   });
+
+
+
+
+
+
+    //eval(entered);
+    //$('.screen').text(eval(entered));
+
 
   $('.clear').on('click', function () {
     entered = "";
     $('.screen').text(entered);
-  })
+  });
 
 
 
