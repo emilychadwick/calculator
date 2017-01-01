@@ -29,6 +29,7 @@
   width: 22%;
   height: 30px;
   line-height: 30px;
+  box-shadow: 0 3px #d3d3d3;
 }
 
 .clear:hover {
@@ -68,9 +69,19 @@
   margin: 1px;
   margin-top: 3px;
   color: white;
+  box-shadow: 0 3px #d3d3d3;
+
 }
 
 .integer:hover,
 .operator:hover {
   background-color: teal;
+}
+
+.integer:active,
+.operator:active,
+.calculate:active,
+.clear:active {
+  box-shadow: 0px 0px pink;
+  top: 4px;
 }
